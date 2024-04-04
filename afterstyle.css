@@ -1,0 +1,158 @@
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Styles for the navigation links */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Hide the navigation links by default */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Show the navigation links when the menu toggle button is clicked */
+    .menu-toggle:checked + .nav-links {
+        display: block;
+    }
+
+    /* Adjust font size and padding for smaller screens */
+    header h4 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    section {
+        padding: 2rem 5%;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    background-image: url('afterr.jpg');
+}
+
+header {
+    background-color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    background-image: url('afterfive.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+header h4 {
+    margin: 0; /* Remove default margin */
+    font-family: "Copperplate", fantasy;
+    font-size: 28px; /* Slightly reduce font size */
+    color: #333; /* Dark gray text color */
+    letter-spacing: 2px;
+    text-align: center;
+    margin-right: -20px; /* Push h4 to the left side */
+}
+
+nav {
+    background-color: #444;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+section {
+    padding: 3rem 10%;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #262626;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.afterr {
+    display: block;
+    margin: 10px;
+    width: auto; /* Ensure the image fills the header */
+    max-width: none; /* Allow the image to exceed its natural width */
+    filter: brightness(110%) contrast(110%);
+    transition: filter 0.3s ease;
+    transform: translate3d(0, 0, 0);
+}
+
+.afterr {
+    width: 100%; /* Make the image fill its container */
+}

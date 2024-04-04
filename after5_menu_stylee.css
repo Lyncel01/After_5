@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(./fonts/Gilroy-Bold.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root {
+    --bg-color: #fff;
+    --main-color: #e55472;
+    --text-color: #010101;
+    --2nd-color: #434343;
+    --other-color: #666666;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
+    padding: 20px 14%;
+    transition: all .50s ease;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+}
+
+.logo,
+.navbar,
+.h-icons {
+    text-align: left; /* Align text to the left */
+}
+
+.navbar {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px; /* Adjust as needed */
+    font-weight: bold;
+}
+
+.navbar li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333; /* Adjust as needed */
+}
+
+header img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 20px; /* Add margin to separate from navbar */
+}
+
+li {
+    padding: 10px;
+}
+
+h1 {
+    align-self: auto;
+}
+
+section{
+    padding: 150px 1% 70px;
+
+}
+
+p b {
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Figtree'
+}
+
+.Menu p a {
+    color: #808080;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.friend-coffee-image {
+    height: 1em;
+    display: none;
+}
+
+.Menu p a:hover .friend-coffee-image {
+    display: inline-block;
+}
